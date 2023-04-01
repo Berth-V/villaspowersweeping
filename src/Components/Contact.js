@@ -1,5 +1,3 @@
-import './Contact.css'
-import '../App.css'
 import {useRef} from 'react';
 import {motion, useInView} from 'framer-motion';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';

@@ -1,5 +1,3 @@
-import './About.css';
-import '../App.css';
 import {useRef} from 'react';
 import {motion, useInView} from 'framer-motion';
 

@@ -1,5 +1,3 @@
-import './Services.css';
-import '../App.css'
 import {useRef, useState} from 'react';
 import {motion, useInView} from 'framer-motion';
 import ImageVisualizer from './ImageVisualizer';

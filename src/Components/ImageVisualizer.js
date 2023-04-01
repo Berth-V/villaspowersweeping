@@ -1,4 +1,3 @@
-import './ImageVisualizer.css';
 import {AiOutlineArrowLeft, AiOutlineArrowRight} from 'react-icons/ai';
 import {RxCross1} from 'react-icons/rx';
 

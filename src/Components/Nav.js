@@ -1,5 +1,3 @@
-import './Nav.css';
-import '../App.css';
 import {useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import {AiFillHome, AiFillInfoCircle} from 'react-icons/ai';
