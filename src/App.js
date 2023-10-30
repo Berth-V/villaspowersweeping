@@ -1,31 +1,23 @@
 import './App.css';
-import {useState} from 'react';
-import {HashRouter, Route, Routes, Navigate} from 'react-router-dom';
+import {useEffect} from 'react';
+import {HashRouter} from 'react-router-dom';
+import {Data} from './Components/Context';
 import Nav from './Components/Nav';
-import Home from './Components/Home';
-import Services from './Components/Services';
-import About from './Components/About';
-import Contact from './Components/Contact';
+import RoutesComponent from './Components/RoutesComponent';
 import Footer from './Components/Footer';
 
 function App() {
-  const [loaded, setLoaded] = useState(false);
-  const [headerIndex, setHeaderIndex] = useState(false);
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, [location]);
 
   return (
     <HashRouter>
-      <Nav layout setLoaded={setLoaded} headerIndex={headerIndex} />
-      <Routes>
-        <Route path='/' element={<Home loaded={loaded} />} />
-        <Route path='/home' element={<Navigate to='/' />} />
-        <Route
-          path='/services'
-          element={<Services setHeaderIndex={setHeaderIndex} />}
-        />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes>
-      <Footer />
+      <Data>
+        <Nav />
+        <RoutesComponent />
+        <Footer />
+      </Data>
     </HashRouter>
   );
 }

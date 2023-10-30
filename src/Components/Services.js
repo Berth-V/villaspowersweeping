@@ -7,12 +7,6 @@ function Services() {
   const [elements, setElements] = useState();
   const [imgPackage, setImgPackage] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
-  // Framer motion values //
-  const isInView = useInView(servicesRef, {once: true});
-  const imgsAnimation = {
-    starts: {y: 50, opacity: 0},
-    ends: {y: 0, opacity: 1},
-  };
   const parkingImages = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg', 'img/4.jpg'];
   const junkImages = ['img/5.jpg', 'img/6.jpg', 'img/7.jpg', 'img/8.jpg'];
   const graffitiImages = [
@@ -27,6 +21,12 @@ function Services() {
     'img/15.jpg',
     'img/16.jpg',
   ];
+  const isInView = useInView(servicesRef, {once: true});
+  // Framer Motion Variants //
+  const imgsAnimation = {
+    starts: {y: 50, opacity: 0},
+    ends: {y: 0, opacity: 1},
+  };
 
   return (
     <div>
@@ -65,12 +65,12 @@ function Services() {
                     className='gallery__img'
                     src={img}
                     key={index}
+                    alt='Villas Power SweeePing Services'
                     onClick={() => {
                       setElements(index);
                       setIsOpen(true);
                       setImgPackage(parkingImages);
                     }}
-                    alt='Villas Power SweeePing Services'
                   />
                 </motion.div>
               ))}

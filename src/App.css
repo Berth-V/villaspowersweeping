@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -8,8 +10,6 @@
 body {
   overflow-x: hidden;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
   --primary-color-code: #f4ae13;
@@ -29,6 +29,7 @@ body {
   position: sticky;
   top: 0;
   background-color: var(--white-color);
+  z-index: 100;
 }
 
 .h1 {
@@ -44,7 +45,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: var(--white-color);
-  z-index: 102;
+  z-index: 101;
 }
 
 .reception__logo {
@@ -90,7 +91,6 @@ body {
 
 .nav__a {
   text-decoration: none;
-  transition: all 0.2s ease;
   text-align: center;
   display: flex;
   flex-direction: column;

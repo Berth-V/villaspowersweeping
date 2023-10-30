@@ -1,20 +1,22 @@
-import {useState} from 'react';
+import {useState, useContext} from 'react';
 import {NavLink} from 'react-router-dom';
 import {AiFillHome, AiFillInfoCircle} from 'react-icons/ai';
 import {MdCleaningServices, MdContacts} from 'react-icons/md';
 import {FaBars} from 'react-icons/fa';
 import {motion} from 'framer-motion';
+import {Context} from './Context';
 import ClickAwayListener from '@mui/base/ClickAwayListener';
 
-const Nav = ({setLoaded, headerIndex}) => {
+const Nav = () => {
+  const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
+  const {setisLogoAnimationCompleted} = useContext(Context);
   const handleClick = () => {
-    setIsOpen(!isOpen);
+    setIsNavMenuOpen(!isNavMenuOpen);
   };
   const handleClickAway = () => {
-    setIsOpen(false);
+    setIsNavMenuOpen(false);
   };
-  const [isOpen, setIsOpen] = useState(false);
-  // Framer motion values //
+  // Framer Motion Variants //
   const navVariants = {
     open: {right: 0},
     close: {right: -100},
@@ -37,19 +39,14 @@ const Nav = ({setLoaded, headerIndex}) => {
   };
 
   return (
-    <motion.header
-      className='header'
-      layout
-      initial={false}
-      animate={headerIndex ? {zIndex: '0'} : {zIndex: '100'}}
-    >
+    <header className='header'>
       <h1 className='h1'>Villa&apos;s Power Sweeping</h1>
       <motion.div
         className='reception__animation'
         layout
         variants={startAnimation}
         animate='ends'
-        onAnimationComplete={() => setLoaded(true)}
+        onAnimationComplete={() => setisLogoAnimationCompleted(true)}
       >
         <motion.img
           className='reception__logo'
@@ -74,7 +71,7 @@ const Nav = ({setLoaded, headerIndex}) => {
       <motion.nav
         className='nav'
         variants={navVariants}
-        animate={isOpen ? 'open' : 'close'}
+        animate={isNavMenuOpen ? 'open' : 'close'}
       >
         <ul className='nav__ul'>
           <li className='nav__li'>
@@ -103,7 +100,7 @@ const Nav = ({setLoaded, headerIndex}) => {
           </li>
         </ul>
       </motion.nav>
-    </motion.header>
+    </header>
   );
 };
 

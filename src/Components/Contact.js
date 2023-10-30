@@ -32,7 +32,6 @@ function Contact() {
       error[1] = 'Message must content 1-150 characters';
       return error;
     }
-
     error[0] = false;
     return error;
   };

@@ -20,10 +20,12 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react'],
+  plugins: ['react-refresh'],
   rules: {
+    'react-refresh/only-export-components': 'warn',
     'no-unused-vars': 'warn',
     'react/prop-types': 0,
     'react/jsx-key': 0,
+    'react/display-name': 0,
   },
 };

@@ -26,7 +26,6 @@ function ImageVisualizer({
       className='image__visualizer'
       style={{display: isOpen ? 'flex' : 'none'}}
     >
-      {console.log(imgPackage[elements])}
       <img className='img' src={imgPackage[elements]} />
       <RxCross1 className='close__cross' onClick={() => setIsOpen(false)} />
       <AiOutlineArrowLeft className='left__arrow' onClick={prevImg} />
