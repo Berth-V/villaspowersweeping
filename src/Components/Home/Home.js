@@ -24,6 +24,7 @@ function Home() {
         <div className='home__container'>
           <motion.h2
             className='h2'
+            /* Framer Motion Attributes */
             variants={items}
             initial='starts'
             animate={isLogoAnimationCompleted && 'ends'}
@@ -33,6 +34,7 @@ function Home() {
           </motion.h2>
           <motion.p
             className='home__text'
+            /* Framer Motion Attributes */
             variants={items}
             initial='starts'
             animate={isLogoAnimationCompleted && 'ends'}
@@ -44,50 +46,54 @@ function Home() {
           </motion.p>
         </div>
       </section>
-      <section className='more'>
+      <section className='home__container2'>
         <motion.img
-          className='more__img'
+          className='home__container2__img'
           src='img/parking.jpg'
-          alt=''
+          alt='Villas Sweeper'
+          /* Framer Motion Attributes */
           variants={items2}
           initial='starts'
           animate={isLogoAnimationCompleted && 'ends'}
         />
         <motion.div
-          className='more__description'
+          className='home__container2__description'
+          /* Framer Motion Attributes */
           variants={items2}
           initial='starts'
           animate={isLogoAnimationCompleted && 'ends'}
         >
-          <p className='more__text'>
+          <p className='home__container2__text'>
             Quality service 24/7. We have units prepared to carry out our work
             with the greatest possible efficiency, regardless of the location or
             size, we have tools to deal with any complications that arise
           </p>
         </motion.div>
       </section>
-      <section className='more2' ref={ref}>
+      <section className='home__container3' ref={ref}>
         <motion.div
-          className='more2__description'
+          className='home__container3__description'
+          /* Framer Motion Attributes */
           animate={isInView ? {x: 0} : {x: -1700}}
         >
-          <p className='more2__text'>
+          <p className='home__container3__text'>
             Still don&apos;t have your appointment? Identify your service, then
             contact us
           </p>
           <div className='btn__container'>
-            <NavLink className='more2btn' to='/services'>
+            <NavLink className='home__container3btn' to='/services'>
               Services
             </NavLink>
-            <NavLink className='more2btn' to='/contact'>
+            <NavLink className='home__container3btn' to='/contact'>
               Contact
             </NavLink>
           </div>
         </motion.div>
         <motion.img
-          className='more__img'
+          className='home__container2__img'
           src='img/parking2.jpg'
-          alt=''
+          alt='Villas Sweeper'
+          /* Framer Motion Attributes */
           animate={isInView ? {x: 0} : {x: -1700}}
         />
       </section>

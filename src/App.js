@@ -1,10 +1,10 @@
 import './App.css';
 import {useEffect} from 'react';
 import {HashRouter} from 'react-router-dom';
-import {Data} from './Components/Context';
-import Header from './Components/Header/Header';
-import RoutesComponent from './Components/RoutesComponent';
-import Footer from './Components/Footer/Footer';
+import {Data} from './components/Context';
+import Header from './components/Header/Header';
+import RoutesComponent from './components/RoutesComponent';
+import Footer from './components/Footer/Footer';
 
 function App() {
   useEffect(() => {

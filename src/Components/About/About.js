@@ -12,7 +12,7 @@ function About() {
         <div className='about__container'>
           <motion.h2
             className='about__h2'
-            initial={false}
+            /* Framer Motion Attributes */
             animate={isInView ? {x: 0} : {x: -1000}}
           >
             About <b className='b'>Us</b>

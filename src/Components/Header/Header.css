@@ -14,7 +14,7 @@
     display: none;
   }
   
-  .reception__animation {
+  .reception__animation__container {
     position: absolute;
     top: 0;
     display: flex;
@@ -107,7 +107,7 @@
       position: absolute;
       right: 25px;
       top: 20px;
-      z-index: 101;
+      z-index: 100;
     }
   
     .logo {
@@ -164,14 +164,6 @@
     .home__text {
       font-size: 18px;
       margin: 0;
-    }
-  
-    .more__text {
-      font-size: 18px;
-    }
-  
-    .more2__text {
-      font-size: 18px;
     }
   }
 

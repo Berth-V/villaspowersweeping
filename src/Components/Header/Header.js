@@ -43,16 +43,17 @@ const Header = () => {
     <header className='header'>
       <h1 className='h1'>Villa&apos;s Power Sweeping</h1>
       <motion.div
-        className='reception__animation'
-        layout
+        className='reception__animation__container'
+        onAnimationComplete={() => setisLogoAnimationCompleted(true)}
+        /* Framer Motion Attributes */
         variants={startAnimation}
         animate='ends'
-        onAnimationComplete={() => setisLogoAnimationCompleted(true)}
       >
         <motion.img
           className='reception__logo'
           layout
           src='img/logo.png'
+          /* Framer Motion Attributes */
           variants={logoAnimation}
           animate='ends'
         />
@@ -71,6 +72,7 @@ const Header = () => {
       </ClickAwayListener>
       <motion.nav
         className='nav'
+        /* Framer Motion Attributes */
         variants={navVariants}
         animate={isNavMenuOpen ? 'open' : 'close'}
       >

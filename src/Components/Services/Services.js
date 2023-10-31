@@ -26,7 +26,13 @@ function Services() {
   // Framer Motion Variants //
   const imgsAnimation = {
     starts: {y: 50, opacity: 0},
-    ends: {y: 0, opacity: 1},
+    ends: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   return (
@@ -35,7 +41,7 @@ function Services() {
         <div className='services__container' ref={servicesRef}>
           <motion.h2
             className='services__h2'
-            initial={false}
+            /* Framer Motion Attributes */
             animate={isInView ? {x: 0} : {x: 1000}}
           >
             <b className='b'>Our</b> services
@@ -54,9 +60,9 @@ function Services() {
           <div className='parking__gallery'>
             <motion.div
               className='gallery__container'
-              layout
+              /* Framer Motion Attributes */
+              variants={imgsAnimation}
               initial={'starts'}
-              transition={{staggerChildren: 0.3}}
               whileInView={'ends'}
               viewport={{once: true}}
             >
@@ -91,9 +97,9 @@ function Services() {
           <div className='junk__gallery'>
             <motion.div
               className='gallery__container'
-              layout
+              /* Framer Motion Attributes */
+              variants={imgsAnimation}
               initial={'starts'}
-              transition={{staggerChildren: 0.3}}
               whileInView={'ends'}
               viewport={{once: true}}
             >
@@ -126,9 +132,9 @@ function Services() {
           <div className='graffiti__gallery'>
             <motion.div
               className='gallery__container'
-              layout
+              /* Framer Motion Attributes */
+              variants={imgsAnimation}
               initial={'starts'}
-              transition={{staggerChildren: 0.3}}
               whileInView={'ends'}
               viewport={{once: true}}
             >
@@ -164,9 +170,9 @@ function Services() {
           <div className='pressure__gallery'>
             <motion.div
               className='gallery__container'
-              layout
+              /* Framer Motion Attributes */
+              variants={imgsAnimation}
               initial={'starts'}
-              transition={{staggerChildren: 0.3}}
               whileInView={'ends'}
               viewport={{once: true}}
             >

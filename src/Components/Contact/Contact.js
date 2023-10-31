@@ -4,9 +4,10 @@ import {motion, useInView} from 'framer-motion';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faWhatsapp, faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
-import useForm from '../../CustomHooks/useForm';
+import useForm from '../../customHooks/useForm';
 
 function Contact() {
+  // Form Variants //
   const initialData = {
     name: '',
     email: '',
@@ -40,7 +41,7 @@ function Contact() {
     initialData,
     onValidate
   );
-  // Framer motion values //
+  // Framer Motion Variants//
   const contactRef = useRef();
   const isInView = useInView(contactRef, {once: true});
   const iconAnimation = {
@@ -58,6 +59,7 @@ function Contact() {
       <section className='contact' ref={contactRef}>
         <motion.h2
           className='contact__h2'
+          /* Framer Motion Attributes */
           initial={false}
           animate={isInView ? {x: 0} : {x: 1000}}
         >
@@ -71,6 +73,7 @@ function Contact() {
                 href='https://wa.me/16197107251'
                 target='_blank'
                 rel='noreferrer'
+                /* Framer Motion Attributes */
                 variants={iconAnimation}
                 whileHover={'hover'}
                 whileTap={'tap'}
@@ -85,6 +88,7 @@ function Contact() {
                 href='https://www.instagram.com/villaspowersweeping'
                 target='_blank'
                 rel='noreferrer'
+                /* Framer Motion Attributes */
                 variants={iconAnimation}
                 whileHover={'hover'}
                 whileTap={'tap'}
@@ -99,6 +103,7 @@ function Contact() {
                 href='mailto:villasporwersweeping'
                 target='_blank'
                 rel='noreferrer'
+                /* Framer Motion Attributes */
                 variants={iconAnimation}
                 whileHover={'hover'}
                 whileTap={'tap'}
