@@ -1,7 +1,8 @@
+import './Home.css';
 import {useRef, useContext} from 'react';
 import {motion, useInView} from 'framer-motion';
 import {NavLink} from 'react-router-dom';
-import {Context} from './Context';
+import {Context} from '../Context';
 
 function Home() {
   const ref = useRef();

@@ -2,9 +2,9 @@ import './App.css';
 import {useEffect} from 'react';
 import {HashRouter} from 'react-router-dom';
 import {Data} from './Components/Context';
-import Nav from './Components/Nav';
+import Header from './Components/Header/Header';
 import RoutesComponent from './Components/RoutesComponent';
-import Footer from './Components/Footer';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   useEffect(() => {
@@ -14,7 +14,7 @@ function App() {
   return (
     <HashRouter>
       <Data>
-        <Nav />
+        <Header />
         <RoutesComponent />
         <Footer />
       </Data>

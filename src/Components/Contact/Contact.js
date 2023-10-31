@@ -1,9 +1,10 @@
+import './Contact.css';
 import {useRef} from 'react';
 import {motion, useInView} from 'framer-motion';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faWhatsapp, faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
-import useForm from '../CustomHooks/useForm';
+import useForm from '../../CustomHooks/useForm';
 
 function Contact() {
   const initialData = {

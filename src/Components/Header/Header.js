@@ -1,13 +1,14 @@
+import './Header.css';
 import {useState, useContext} from 'react';
 import {NavLink} from 'react-router-dom';
 import {AiFillHome, AiFillInfoCircle} from 'react-icons/ai';
 import {MdCleaningServices, MdContacts} from 'react-icons/md';
 import {FaBars} from 'react-icons/fa';
 import {motion} from 'framer-motion';
-import {Context} from './Context';
+import {Context} from '../Context';
 import ClickAwayListener from '@mui/base/ClickAwayListener';
 
-const Nav = () => {
+const Header = () => {
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
   const {setisLogoAnimationCompleted} = useContext(Context);
   const handleClick = () => {
@@ -104,4 +105,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Header;
