@@ -26,8 +26,6 @@ Builds the app for production to the `build` folder
 - HTML5
 - CSS5
 - ECS6
-- [React](https://react.dev/) - JS Library
-- [Framer Motion](https://www.framer.com/motion/?utm_source=google&utm_medium=adwords&utm_campaign=TW-WW-All-GS-UA-Traffic-20190326-Brand.Bmm_) - Production-ready motion library for React
 
 ### :wave: Social
 

@@ -3,7 +3,7 @@ import {useEffect} from 'react';
 import {HashRouter} from 'react-router-dom';
 import {Data} from './components/Context';
 import Header from './components/Header/Header';
-import RoutesComponent from './components/RoutesComponent';
+import RoutesComponent from './routes/RoutesComponent';
 import Footer from './components/Footer/Footer';
 
 function App() {

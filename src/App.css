@@ -7,15 +7,24 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  overflow-x: hidden;
+html,
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
   --primary-color-code: #f4ae13;
   --white-color: #fafafa;
   --black-color: #0b0b0b;
-  --header-size: 80px;
-  --footer-size: 35px;
+  --header-size: 5rem;
+  --footer-size: 2.2rem;
   --nav-position-control: unset;
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --nav-position-control: fixed;
+  }
 }

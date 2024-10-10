@@ -1,9 +1,9 @@
 import {useEffect} from 'react';
 import {Route, Routes, Navigate, useLocation} from 'react-router-dom';
-import Home from './Home/Home';
-import Services from './Services/Services';
-import About from './About/About';
-import Contact from './Contact/Contact';
+import Home from '../components/Home/Home';
+import Services from '../components/Services/Services';
+import About from '../components/About/About';
+import Contact from '../components/Contact/Contact';
 
 function RoutesComponent() {
   const location = useLocation();

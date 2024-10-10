@@ -21,8 +21,8 @@
   .about__h2 {
     color: var(--white-color);
     text-align: center;
-    margin: 20px 0;
-    font-size: 35px;
+    margin: 1.2rem 0;
+    font-size: 2.2rem;
   }
   
   .about__h2 .b {
@@ -39,20 +39,19 @@
   }
   
   .about__img {
-    height: 200px;
-    margin-right: 80px;
+    height: 12.5rem  ;
+    margin-right: 5rem  ;
   }
   
   .about__text {
-    font-size: 18px;
-    margin: 0 80px;
+    font-size: 1.1rem;
+    margin: 0 5rem  ;
     height: auto;
   }
 
-  /* Responsive Design */
   @media screen and (max-width: 1820px) {
     .about__text {
-      font-size: 17px;
+      font-size: 1.1rem;
       margin: 0;
     }
   }
@@ -70,7 +69,7 @@
     }
   
     .about__h2 {
-      font-size: 35px;
+      font-size: 2.2rem;
     }
   }
 
@@ -88,11 +87,11 @@
     }
   
     .about__img {
-      height: 170px;
+      height: 10.6rem;
     }
   
     .about__text {
-      font-size: 16px;
+      font-size: 1rem  ;
     }
   }  
 
@@ -102,9 +101,9 @@
     }
   
     .about__img {
-      height: 200px;
-      width: 250px;
-      margin-right: 20px;
+      height: 12.5rem  ;
+      width: 15.6rem;
+      margin-right: 1.2rem;
     }
   }
 
@@ -120,7 +119,7 @@
   
     .about__img {
       margin: 0;
-      margin-bottom: 50px;
+      margin-bottom: 3.1rem;
     }
   }
 
@@ -130,7 +129,7 @@
     }
   
     .about__h2 {
-      font-size: 31px;
+      font-size: 1.9rem;
     }
   
     .about__description {
@@ -141,46 +140,46 @@
     }
   
     .about__img {
-      height: 150px;
-      width: 200px;
+      height: 9.4rem;
+      width: 12.5rem  ;
       margin: 0;
     }
   
     .about__text {
       height: 60%;
       overflow-y: scroll;
-      margin: 0 10px;
-      font-size: 15px;
+      margin: 0 0.6rem;
+      font-size: 0.9rem;
     }
   
     .about__text::-webkit-scrollbar {
-      width: 2px;
+      width: 0.12rem;
     }
   
     .about__text::-webkit-scrollbar-thumb {
       background: var(--primary-color-code);
-      border-radius: 10px;
+      border-radius: 0.6rem;
     }
   }
 
   @media screen and (max-width: 390px) {
     .about__text {
-      font-size: 16px;
+      font-size: 1rem  ;
     }
   }
 
   @media screen and (max-width: 330px) {
     .about__container {
-      height: 290px;
+      height: 18rem;
     }
   
     .about__h2 {
-      font-size: 30px;
-      margin: 10px 0;
+      font-size: 1.9rem;
+      margin: 0.6rem 0;
     }
   
     .about__img {
-      width: 200px;
-      height: 100px;
+      width: 12.5rem;
+      height: 6.2rem;
     }
   }

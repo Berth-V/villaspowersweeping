@@ -12,9 +12,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: 4.4rem;
     color: var(--white-color);
-    font-size: 35px;
+    font-size: 2.2rem;
     font-weight: 600;
     background-color: var(--black-color);
   }
@@ -26,11 +26,11 @@
   .contact__container {
     width: 60%;
     height: 80%;
-    border: 2px solid var(--black-color);
+    border: 0.12rem solid var(--black-color);
     display: flex;
     justify-content: space-between;
     background-color: var(--white-color);
-    border-radius: 8px;
+    border-radius: 0.5rem;
   }
   
   .icon__container {
@@ -46,33 +46,33 @@
     display: flex;
     align-items: center;
     width: 80%;
-    margin-bottom: 15px;
+    margin-bottom: 0.9rem;
   }
   
   .icon__a {
     border-radius: 50%;
-    border: 2px solid var(--black-color);
+    border: 0.12rem solid var(--black-color);
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .contact__icon {
-    font-size: 30px;
-    padding: 10px;
+    font-size: 1.9rem;
+    padding: 0.6rem;
     margin: 0;
     color: var(--black-color);
     background-color: transparent;
   }
   
   .icon__span {
-    margin-left: 10px;
-    font-size: 16px;
+    margin-left: 0.6rem;
+    font-size: 1rem  ;
     text-decoration: none;
   }
   
   .form__container {
-    width: 800px;
+    width: 50rem;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -83,47 +83,47 @@
     width: 80%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 50px;
-    grid-gap: 30px;
+    grid-auto-rows: 3.1rem;
+    grid-gap: 1.9rem;
   }
   
   .form__input {
     padding: 0;
-    font-size: 15px;
+    font-size: 0.9rem;
     outline: none;
     color: var(--black-color);
     border: none;
-    border-bottom: 2px solid var(--black-color);
+    border-bottom: 0.12rem solid var(--black-color);
     background-color: var(--white-color);
     transition: all 0.2s ease-in-out;
   }
   
   .form__input:focus {
-    border: 2px solid var(--primary-color-code);
+    border: 0.12rem solid var(--primary-color-code);
   }
   
   .form__input--message {
     resize: none;
-    padding: 3px;
-    font-size: 15px;
+    padding: 0.2rem;
+    font-size: 0.9rem;
     color: var(--black-color);
     border: none;
-    border-bottom: 2px solid var(--black-color);
+    border-bottom: 0.12rem solid var(--black-color);
     background-color: var(--white-color);
     transition: all 0.2s ease-in-out;
   }
   
   .form__input--message:focus {
     outline: none;
-    border: 2px solid var(--primary-color-code);
+    border: 0.12rem solid var(--primary-color-code);
   }
   
   .form__submit {
     padding: 0;
-    font-size: 15px;
+    font-size: 0.9rem;
     color: var(--black-color);
     background-color: var(--white-color);
-    border: 2px solid var(--black-color);
+    border: 0.12rem solid var(--black-color);
     transition: all 0.3s ease-in;
     cursor: pointer;
   }
@@ -131,13 +131,13 @@
   .form__submit:hover {
     background-color: var(--primary-color-code);
     color: var(--black-color);
-    border: 2px solid var(--primary-color-code);
+    border: 0.12rem solid var(--primary-color-code);
   }
   
   .form .result {
     color: var(--black-color);
     text-align: center;
-    font-size: 15px;
+    font-size: 0.9rem;
   }
   
   .error {
@@ -155,7 +155,7 @@
 
   @media screen and (max-width: 1070px) {
     .contact__h2 {
-      font-size: 34px;
+      font-size: 2.1rem;
     }
   
     .contact__container {
@@ -163,7 +163,7 @@
     }
   
     .icon__span {
-      font-size: 15px;
+      font-size: 0.9rem;
     }
   }
 
@@ -174,25 +174,25 @@
     }
   
     .icon__span {
-      font-size: 14px;
+      font-size: 0.9rem;
     }
   
     .form__input {
-      font-size: 14px;
+      font-size: 0.9rem;
     }
   
     .form__input--message {
-      font-size: 14px;
+      font-size: 0.9rem;
     }
   
     .form__submit {
-      font-size: 14px;
+      font-size: 0.9rem;
     }
   }
 
   @media screen and (max-width: 750px) {
     .contact__h2 {
-      font-size: 34px;
+      font-size: 2.1rem;
     }
   
     .contact__container {
@@ -204,11 +204,11 @@
     }
   
     .icon__box {
-      margin-bottom: 35px;
+      margin-bottom: 2.2rem;
     }
   
     .contact__icon {
-      font-size: 25px;
+      font-size: 1.6rem  ;
     }
   
     .form__container {
@@ -221,11 +221,11 @@
     }
   
     .form__submit {
-      padding: 2px;
+      padding: 0.12rem;
     }
   
     .form__icon {
-      font-size: 25px;
+      font-size: 1.6rem  ;
     }
   }
 
@@ -249,7 +249,7 @@
     }
   
     .contact__icon {
-      font-size: 21px;
+      font-size: 1.3rem;
     }
   
     .form__container {
@@ -263,19 +263,19 @@
     }
   
     .form__input {
-      padding: 8px 3px;
+      padding: 0.5rem 0.2rem;
     }
   
     .form__input--message {
-      padding: 0 3px;
+      padding: 0 0.2rem;
     }
   
     .form__submit {
-      padding: 7px;
+      padding: 0.44rem;
     }
   
     .form__icon {
-      font-size: 21px;
+      font-size: 1.3rem;
     }
   }
 
@@ -285,60 +285,60 @@
     }
   
     .contact__h2 {
-      font-size: 31px;
+      font-size: 1.9rem;
       height: 40px;
       margin: 0;
     }
   
     .contact__container {
-      height: 580px;
+      height: 36.2rem;
     }
   
     .icon__container {
-      height: 150px;
+      height: 9.4rem;
     }
   
     .contact__icon {
-      font-size: 14px;
+      font-size: 0.9rem;
     }
   
     .icon__span {
-      font-size: 13px;
+      font-size: 0.8rem;
     }
   
     .form {
-      padding: 10px;
-      height: 300px;
+      padding: 0.6rem;
+      height: 18.7rem;
       width: 80%;
     }
   
     .form__input {
-      font-size: 13px;
-      padding: 8px 3px;
+      font-size: 0.8rem;
+      padding: 0.5rem 0.2rem;
     }
   
     .form__input--message {
-      padding: 5px;
-      font-size: 13px;
+      padding: 0.3rem;
+      font-size: 0.8rem;
     }
   
     .form__submit {
-      padding: 5px;
-      font-size: 13px;
+      padding: 0.3rem;
+      font-size: 0.8rem;
     }
   
     .form__icon {
-      font-size: 14px;
+      font-size: 0.9rem;
     }
   }
 
   @media screen and (max-width: 390px) {
     .contact__container {
-      height: 480px;
+      height: 30rem;
     }
   
     .icon__container {
-      height: 130px;
+      height: 8.1rem;
     }
   
     .icon__box {
@@ -346,50 +346,50 @@
     }
   
     .contact__icon {
-      font-size: 17px;
-      padding: 8px;
+      font-size: 1.1rem;
+      padding: 0.5rem;
     }
   
     .form {
-      padding: 1px;
-      height: 280px;
+      padding: 0.063rem;
+      height: 17.5rem  ;
       width: 80%;
-      grid-gap: 15px;
+      grid-gap: 0.9rem;
     }
   
     .form__input {
-      font-size: 12px;
-      padding: 3px;
+      font-size: 0.75rem;
+      padding: 0.2rem;
     }
   
     .form__input--message {
-      padding: 3px;
-      font-size: 12px;
+      padding: 0.2rem;
+      font-size: 0.75rem;
     }
   
     .form__submit {
-      padding: 1px;
-      font-size: 12px;
+      padding: 0.063rem;
+      font-size: 0.75rem;
     }
   }
 
   @media screen and (max-width: 360px) {
     .contact__container {
-      height: 440px;
+      height: 27.5rem;
     }
   }
 
   @media screen and (max-width: 330px) {
     .contact__h2 {
-      font-size: 26px;
+      font-size: 1.6rem;
     }
   
     .contact__container {
-      height: 300px;
+      height: 18.7rem;
     }
   
     .icon__container {
-      height: 80px;
+      height: 5rem ;
     }
   
     .icon__box {
@@ -398,12 +398,12 @@
     }
   
     .contact__icon {
-      font-size: 11px;
-      padding: 5px;
+      font-size: 0.7rem;
+      padding: 0.3rem;
     }
   
     .icon__span {
-      font-size: 11px;
+      font-size: 0.7rem;
     }
   
     .form__container {
@@ -412,30 +412,30 @@
   
     .form {
       padding: 0;
-      height: 180px;
+      height: 11.2rem;
       width: 80%;
       grid-gap: 0;
     }
   
     .form__input {
-      font-size: 11px;
+      font-size: 0.7rem;
       padding: 0;
-      height: 20px;
+      height: 1.2rem;
     }
   
     .form__input--message {
-      padding: 2px;
-      font-size: 11px;
-      height: 30px;
+      padding: 0.12rem;
+      font-size: 0.7rem;
+      height: 1.9rem;
     }
   
     .form__submit {
       padding: 0;
-      font-size: 11px;
-      height: 30px;
+      font-size: 0.7rem;
+      height: 1.9rem;
     }
   
     .form__icon {
-      font-size: 15px;
+      font-size: 0.9rem;
     }
   }

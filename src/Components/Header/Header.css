@@ -1,33 +1,32 @@
 .header {
+    position: sticky;
+    height: var(--header-size);
+    width: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: var(--header-size);
-    width: 100%;
-    position: sticky;
-    top: 0;
     background-color: var(--white-color);
     z-index: 100;
-  }
-  
-  .h1 {
-    display: none;
+    border-bottom: inset 0.3rem var(--black-color);
   }
   
   .reception__animation__container {
     position: absolute;
     top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: var(--white-color);
     z-index: 101;
   }
   
   .reception__logo {
-    height: 200px;
+    height: 12rem;
   }
   
   .logo {
@@ -54,7 +53,6 @@
     display: flex;
     justify-content: center;
     background-color: var(--white-color);
-    box-shadow: 5px 0px 5px black;
   }
   
   .nav__ul {
@@ -62,9 +60,8 @@
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    font-size: 18px;
-    width: 400px;
-    height: 80px;
+    height: 5rem;
+    width: 26rem;
   }
   
   .nav__a {
@@ -76,10 +73,10 @@
   }
   
   .nav__icon {
-    font-size: 50px;
-    border: solid 1px var(--black-color);
+    font-size: 3.2rem;
+    border: solid 0.1rem var(--black-color);
     border-radius: 50%;
-    padding: 10px;
+    padding: 0.6rem;
     color: var(--black-color);
     transition: all 0.4s ease-in-out;
     cursor: pointer;
@@ -90,23 +87,18 @@
   }
   
   .nav__span {
-    margin-top: 5px;
-    font-size: 11px;
+    font-size: 0.7rem;
     color: var(--black-color);
   }
 
   @media screen and (max-width: 900px) {
-    :root {
-      --nav-position-control: fixed;
-    }
-  
-    .toggle__btn {
+      .toggle__btn {
       display: unset;
-      font-size: 35px;
       color: var(--black-color);
+      font-size: 2.2rem;
       position: absolute;
-      right: 25px;
-      top: 20px;
+      right: 1.7rem;
+      top: 1.3rem;
       z-index: 100;
     }
   
@@ -117,15 +109,16 @@
     .nav {
       right: 0;
       top: 0;
-      flex-direction: column;
-      width: 90px;
-      align-items: center;
       height: 100%;
+      width: 5.5rem;
+      flex-direction: column;
+      align-items: center;
       background-color: var(--white-color);
+      border-left: inset 0.3rem var(--black-color);
     }
   
     .nav__ul {
-      right: 0;
+      left: 0;
       top: 0;
       width: 100%;
       flex-direction: column;
@@ -136,8 +129,8 @@
 
   @media screen and (max-width: 550px) {
     :root {
-      --header-size: 70px;
-      --footer-size: 30px;
+      --header-size: 4.3rem;
+      --footer-size: 1.9rem;
     }
   
     .header {
@@ -149,20 +142,20 @@
     }
   
     .nav__icon {
-      font-size: 45px;
+      font-size: 2.8rem;
     }
   
     .h2 {
-      font-size: 31px;
+      font-size: 1.9rem;
       margin: 0;
     }
   
     .home {
-      height: 300px;
+      height: 18.7rem;
     }
   
     .home__text {
-      font-size: 18px;
+      font-size: 1.1rem;
       margin: 0;
     }
   }
@@ -173,43 +166,43 @@
     }
   
     .reception__logo {
-      height: 100px;
+      height: 8rem;
     }
   
     .toggle__btn {
-      top: 15px;
+      top: 1rem;
     }
   }
 
   @media screen and (max-width: 390px) {
     :root {
-      --header-size: 60px;
+      --header-size: 3.7rem;
     }
   
     .nav {
-      width: 50px;
+      width: 3.1rem;
     }
   
     .nav__icon {
-      font-size: 42px;
-      padding: 8px;
+      font-size: 2.4rem;
+      padding: 0.5rem;
     }
   
     .nav__span {
-      font-size: 9px;
+      font-size: 0.5rem;
     }
   
     .toggle__btn {
-      font-size: 30px;
-      top: 13px;
-      right: 10px;
+      font-size: 1.8rem;
+      top: 0.8rem;
+      right: 0.6rem;
     }
   }
 
   @media screen and (max-width: 330px) {
     :root {
-      --header-size: 65px;
-      --footer-size: 25px;
+      --header-size: 4rem;
+      --footer-size: 1.5rem;
     }
   
     .header {
@@ -217,7 +210,7 @@
     }
   
     .nav__icon {
-      font-size: 42px;
-      padding: 6px;
+      font-size: 2.6rem;
+      padding: 0.3rem;
     }
   }

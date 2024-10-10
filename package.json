@@ -1,6 +1,7 @@
 {
   "name": "villas",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -17,12 +18,12 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.6.1",
-    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --fix . --ext .js,.jsx",
@@ -47,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.2",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-standard": "^17.0.0",
@@ -55,6 +57,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-refresh": "^0.4.4",
-    "prettier": "^2.8.4"
+    "prettier": "^2.8.4",
+    "vite": "^5.4.8"
   }
 }

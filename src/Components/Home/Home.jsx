@@ -19,36 +19,35 @@ function Home() {
   };
 
   return (
-    <>
-      <section className='home'>
-        <div className='home__container'>
-          <motion.h2
-            className='h2'
-            /* Framer Motion Attributes */
-            variants={items}
-            initial='starts'
-            animate={isLogoAnimationCompleted && 'ends'}
-          >
-            We care your <b className='b'>space</b>, your{' '}
-            <b className='b'>time</b>
-          </motion.h2>
-          <motion.p
-            className='home__text'
-            /* Framer Motion Attributes */
-            variants={items}
-            initial='starts'
-            animate={isLogoAnimationCompleted && 'ends'}
-          >
-            No time to tidy up your spaces?
-            <br />
-            We know that time is never recovered, invest it in the things that
-            matter to you. We take care of the rest
-          </motion.p>
-        </div>
+    <div className='home'>
+      <section className='home__section'>
+        <h1 className='h1'>Villa&apos;s Power Sweeping</h1>
+        <motion.h2
+          className='h2'
+          /* Framer Motion Attributes */
+          variants={items}
+          initial='starts'
+          animate={isLogoAnimationCompleted && 'ends'}
+        >
+          We care your <b className='b'>space</b>, your
+          <b className='b'> time</b>
+        </motion.h2>
+        <motion.p
+          className='home__text'
+          /* Framer Motion Attributes */
+          variants={items}
+          initial='starts'
+          animate={isLogoAnimationCompleted && 'ends'}
+        >
+          No time to tidy up your spaces?
+          <br />
+          We know that time is never recovered, invest it in the things that
+          matter to you. We take care of the rest
+        </motion.p>
       </section>
-      <section className='home__container2'>
+      <section className='home__section2'>
         <motion.img
-          className='home__container2__img'
+          className='home__section2__img'
           src='img/parking.jpg'
           alt='Villas Sweeper'
           /* Framer Motion Attributes */
@@ -57,47 +56,47 @@ function Home() {
           animate={isLogoAnimationCompleted && 'ends'}
         />
         <motion.div
-          className='home__container2__description'
+          className='home__section2__description'
           /* Framer Motion Attributes */
           variants={items2}
           initial='starts'
           animate={isLogoAnimationCompleted && 'ends'}
         >
-          <p className='home__container2__text'>
+          <p className='home__section2__text'>
             Quality service 24/7. We have units prepared to carry out our work
             with the greatest possible efficiency, regardless of the location or
             size, we have tools to deal with any complications that arise
           </p>
         </motion.div>
       </section>
-      <section className='home__container3' ref={ref}>
+      <section className='home__section3' ref={ref}>
         <motion.div
-          className='home__container3__description'
+          className='home__section3__description'
           /* Framer Motion Attributes */
           animate={isInView ? {x: 0} : {x: -1700}}
         >
-          <p className='home__container3__text'>
+          <p className='home__section3__text'>
             Still don&apos;t have your appointment? Identify your service, then
             contact us
           </p>
           <div className='btn__container'>
-            <NavLink className='home__container3btn' to='/services'>
+            <NavLink className='home__section3btn' to='/services'>
               Services
             </NavLink>
-            <NavLink className='home__container3btn' to='/contact'>
+            <NavLink className='home__section3btn' to='/contact'>
               Contact
             </NavLink>
           </div>
         </motion.div>
         <motion.img
-          className='home__container2__img'
+          className='home__section2__img'
           src='img/parking2.jpg'
           alt='Villas Sweeper'
           /* Framer Motion Attributes */
           animate={isInView ? {x: 0} : {x: -1700}}
         />
       </section>
-    </>
+    </div>
   );
 }
 export default Home;

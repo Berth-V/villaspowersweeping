@@ -1,83 +1,118 @@
 .services {
     height: auto;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+  }
+
+  .services__tittle__container {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    height: 5rem;
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--white-color);
+    background-color: var(--black-color);
+  }
+  
+  .services__h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--white-color);
+    background-color: var(--black-color);
+  }
+  
+  .services__h2 .b {
+    color: var(--primary-color-code);
+    margin-right: 0.4rem;
   }
   
   .services__container {
     height: auto;
     width: 100%;
-    background-color: var(--black-color);
-  }
-  
-  .services__h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    color: var(--white-color);
-    font-size: 35px;
-    font-weight: 600;
-  }
-  
-  .services__h2 .b {
-    color: var(--primary-color-code);
-    margin-right: 7px;
-  }
-  
-  .parking {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--white-color);
-  }
-  
-  .parking__h3 {
-    color: var(--black-color);
-    font-size: 27px;
-    font-weight: 500;
-    text-align: center;
-  }
-  
-  .parking__description {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    align-items: center;
+  }
+
+  .parking,
+  .junk,
+  .graffiti,
+  .pressure {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .parking,
+  .graffiti {
+    background-color: var(--white-color);
+  }
+
+  .junk, 
+  .pressure{
+    background-color: var(--black-color);
+  }
+
+  .parking__description,
+  .junk__description,
+  .graffiti__description,
+  .pressure__description {
+    display: flex;
+    flex-direction: column;
+    width: 37.5rem;
     justify-content: space-around;
     text-align: center;
   }
   
-  .parking__text {
+  .parking__h3,
+  .junk__h3,
+  .graffiti__h3,
+  .pressure__h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .parking__h3,
+  .graffiti__h3 {
     color: var(--black-color);
-    font-size: 20px;
-    margin: 0 50px;
-    margin-top: 35px;
+  }
+
+  .junk__h3,
+  .pressure__h3 { 
+    color: var(--white-color);
   }
   
-  .parking2 {
-    height: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: var(--white-color);
+  .parking__text,
+  .junk__text,
+  .graffiti__text,
+  .pressure__text {
+    font-size: 1.2rem;
+    padding: 2rem 0;
   }
-  
-  .parking__gallery {
-    height: auto;
-    width: auto;
-    background-color: var(--white-color);
+   
+  .parking__text,
+  .graffiti__text {
+     color: var(--black-color);
   }
-  
+
+  .junk__text,
+  .pressure__text {
+    color: var(--white-color);
+  }
+
   .gallery__container {
-    height: 400px;
+    height: auto;
     width: 72%;
-    margin: 0 auto;
-    padding: 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
+    grid-gap: 0.9rem;
   }
   
   .gallery__item {
@@ -88,133 +123,14 @@
   
   .gallery__img {
     width: 100%;
-    height: 300px;
+    height: 18.7rem;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 0.9rem;
   }
   
   .gallery__img:hover {
     opacity: 0.7;
     cursor: pointer;
-  }
-  
-  .junk {
-    display: flex;
-    height: 300px;
-    background-color: var(--black-color);
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .junk__img {
-    height: 450px;
-    border-radius: 20px;
-    float: left;
-  }
-  
-  .junk__description {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    justify-content: space-around;
-  }
-  
-  .junk__h3 {
-    text-align: center;
-    color: var(--white-color);
-    font-size: 27px;
-    font-weight: 500;
-    margin: 0 50px;
-  }
-  
-  .junk__text {
-    color: var(--white-color);
-    font-size: 20px;
-    margin: 0 50px;
-    margin-top: 35px;
-    text-align: center;
-  }
-  
-  .junk__gallery {
-    background-color: var(--black-color);
-  }
-  
-  .graffiti {
-    display: flex;
-    justify-content: center;
-    height: 300px;
-    background-color: var(--white-color);
-    align-items: center;
-    margin: 0;
-  }
-  
-  .graffiti__description {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    justify-content: space-around;
-  }
-  
-  .graffiti__h3 {
-    text-align: center;
-    color: var(--black-color);
-    font-size: 27px;
-    font-weight: 500;
-    margin: 0 50px;
-  }
-  
-  .graffiti__img {
-    height: 450px;
-    border-radius: 20px;
-    float: right;
-  }
-  
-  .graffiti__text {
-    text-align: center;
-    color: var(--black-color);
-    font-size: 20px;
-    margin: 0 50px;
-    margin-top: 35px;
-  }
-  
-  .graffiti__gallery {
-    background-color: var(--white-color);
-  }
-  
-  .pressure {
-    display: flex;
-    justify-content: center;
-    height: 300px;
-    background-color: var(--black-color);
-    align-items: center;
-    margin: 0;
-  }
-  
-  .pressure__description {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    justify-content: space-around;
-  }
-  
-  .pressure__h3 {
-    text-align: center;
-    color: var(--white-color);
-    font-size: 27px;
-    font-weight: 500;
-    margin: 0 50px;
-  }
-  
-  .pressure__text {
-    color: var(--white-color);
-    font-size: 20px;
-    margin: 0 50px;
-    margin-top: 35px;
-    text-align: center;
-  }
-  
-  .pressure__gallery {
-    background-color: var(--black-color);
   }
   
   .image__visualizer {
@@ -238,9 +154,9 @@
   
   .close__cross {
     position: absolute;
-    top: 20px;
-    right: 25px;
-    font-size: 35px;
+    top: 1.2rem;
+    right: 1.6rem  ;
+    font-size: 2.2rem;
     cursor: pointer;
     color: var(--primary-color-code);
   }
@@ -249,7 +165,7 @@
     position: absolute;
     left: 5vw;
     top: 50vh;
-    font-size: 35px;
+    font-size: 2.2rem;
     cursor: pointer;
     color: var(--primary-color-code);
   }
@@ -258,53 +174,35 @@
     position: absolute;
     top: 50vh;
     right: 5vw;
-    font-size: 35px;
+    font-size: 2.2rem;
     cursor: pointer;
     color: var(--primary-color-code);
   }
 
   @media screen and (max-width: 1280px) {
     .img {
-      max-height: 80%;
-      max-width: 80%;
+      height: 80%;
+      width: 80%;
     }
   }
 
   @media screen and (max-width: 1070px) {
     .services__h2 {
-      font-size: 30px;
+      font-size: 1.9rem;
     }
   
-    .parking__h3 {
-      font-size: 26px;
-    }
-  
-    .parking__text {
-      font-size: 18px;
-    }
-  
-    .junk__h3 {
-      font-size: 26px;
-    }
-  
-    .junk__text {
-      font-size: 19px;
-    }
-  
-    .graffiti__h3 {
-      font-size: 26px;
-    }
-  
-    .graffiti__text {
-      font-size: 19px;
-    }
-  
+    .parking__h3,
+    .junk__h3,
+    .graffiti__h3,
     .pressure__h3 {
-      font-size: 26px;
+      font-size: 1.6rem;
     }
   
-    .pressure__text {
-      font-size: 19px;
+    .parking__text, 
+    .junk__text,
+    .graffiti__text,
+    .pressure__text { 
+      font-size: 1.1rem;
     }
   }
 
@@ -323,10 +221,6 @@
       max-width: 90%;
     }
   
-    .parking__gallery {
-      height: 1300px;
-    }
-  
     .gallery__container {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -336,20 +230,8 @@
     }
   
     .gallery__img {
-      width: 400px;
-      height: 300px;
-    }
-  
-    .junk__gallery {
-      height: 1300px;
-    }
-  
-    .graffiti__gallery {
-      height: 1300px;
-    }
-  
-    .pressure__gallery {
-      height: 1300px;
+      width: 25rem;
+      height: 18.7rem;
     }
   }
 
@@ -358,42 +240,28 @@
       max-width: 95%;
     }
   
-    .parking__h3 {
-      font-size: 24px;
-    }
-  
-    .parking__text {
-      font-size: 18px;
-    }
-  
-    .junk__h3 {
-      font-size: 24px;
-    }
-  
-    .junk__text {
-      font-size: 18px;
-    }
-  
-    .graffiti__h3 {
-      font-size: 25px;
-    }
-  
-    .graffiti__text {
-      font-size: 18px;
-    }
-  
+    .parking__h3,
+    .junk__h3, 
+    .graffiti__h3,
     .pressure__h3 {
-      font-size: 25px;
+      font-size: 1.5rem  ;
+    }
+
+    .parking__description,
+    .junk__description,
+    .graffiti__description,
+    .pressure__description {
+      width: 85%;
     }
   
-    .pressure__text {
-      font-size: 18px;
+    .parking__text,
+    .junk__text,
+    .graffiti__text,
+    .pressure__text  {
+      font-size: 1.1rem;
+      padding: 2rem;
     }
-  
-    .gallery__container {
-      height: auto;
-    }
-  
+
     .gallery__img {
       width: 100%;
     }
@@ -406,20 +274,27 @@
   }
 
   @media screen and (max-width: 390px) {
-    .parking__text {
-      font-size: 16px;
+    .parking,
+    .junk,
+    .graffiti,
+    .pressure {
+      padding: 1rem;
     }
-  
-    .junk__text {
-      font-size: 16px;
+
+    .parking__description,
+    .junk__description,
+    .graffiti__description,
+    .pressure__description {
+      width: 95%;
     }
-  
-    .graffiti__text {
-      font-size: 16px;
-    }
-  
+
+
+    .parking__text,
+    .junk__text, 
+    .graffiti__text,
     .pressure__text {
-      font-size: 16px;
+      font-size: 1rem;
+      padding: 1rem;
     }
   }
 
@@ -431,47 +306,24 @@
 
   @media screen and (max-width: 330px) {
     .services__h2 {
-      font-size: 33px;
+      font-size: 1.6rem  ;
     }
   
     .img {
       max-height: 80%;
     }
   
-    .parking {
-      height: 280px;
-    }
-  
-    .parking__h3 {
-      font-size: 24px;
-    }
-  
-    .parking__text {
-      margin: 0 20px;
-      margin-top: 30px;
-    }
-  
-    .junk__h3 {
-      font-size: 24px;
-    }
-  
-    .junk__text {
-      margin: 30px 20px;
-    }
-  
-    .graffiti__h3 {
-      font-size: 24px;
-    }
-  
-    .graffiti__text {
-      margin: 30px 20px;
-    }
-  
+    .parking__h3,
+    .junk__h3,
+    .graffiti__h3,
     .pressure__h3 {
-      font-size: 24px;
+      font-size: 1.4rem  ;
     }
   
+    .parking__text,
+    .junk__text,
+    .graffiti__text,
     .pressure__text {
-      margin: 30px 20px;
+      font-size: 0.9rem;
     }
   }

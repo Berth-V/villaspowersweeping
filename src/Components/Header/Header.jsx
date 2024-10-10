@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <header className='header'>
-      <h1 className='h1'>Villa&apos;s Power Sweeping</h1>
+      {/* Introducer Rotating Logo  */}
       <motion.div
         className='reception__animation__container'
         onAnimationComplete={() => setisLogoAnimationCompleted(true)}
