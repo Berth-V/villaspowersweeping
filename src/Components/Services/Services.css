@@ -132,7 +132,7 @@
     opacity: 0.7;
     cursor: pointer;
   }
-  
+   /* Image Visualizer */
   .image__visualizer {
     position: fixed;
     top: 0;
@@ -180,6 +180,7 @@
   }
 
   @media screen and (max-width: 1280px) {
+    /* Image Visualizer */
     .img {
       height: 80%;
       width: 80%;
@@ -211,49 +212,47 @@
       width: 90%;
     }
   
+    /* Image Visualizer */
     .img {
       min-width: 70%;
     }
   }
 
   @media screen and (max-width: 750px) {
-    .img {
-      max-width: 90%;
-    }
-  
     .gallery__container {
       grid-template-columns: repeat(1, 1fr);
     }
-  
+    
     .gallery__item {
       justify-content: center;
     }
-  
+    
     .gallery__img {
       width: 25rem;
       height: 18.7rem;
     }
+
+    /* Image Visualizer */
+    .img {
+      max-width: 90%;
+    }
   }
 
   @media screen and (max-width: 550px) {
-    .img {
-      max-width: 95%;
-    }
-  
     .parking__h3,
     .junk__h3, 
     .graffiti__h3,
     .pressure__h3 {
       font-size: 1.5rem  ;
     }
-
+    
     .parking__description,
     .junk__description,
     .graffiti__description,
     .pressure__description {
       width: 85%;
     }
-  
+    
     .parking__text,
     .junk__text,
     .graffiti__text,
@@ -261,18 +260,23 @@
       font-size: 1.1rem;
       padding: 2rem;
     }
-
+    
     .gallery__img {
       width: 100%;
     }
-  }
 
+    .img {
+      max-width: 95%;
+    }
+  }
+  
   @media screen and (max-width: 450px) {
+    /* Image Visualizer */
     .img {
       max-height: 65%;
     }
   }
-
+  
   @media screen and (max-width: 390px) {
     .parking,
     .junk,
@@ -299,6 +303,7 @@
   }
 
   @media screen and (max-width: 360px) {
+    /* Image Visualizer */
     .img {
       max-height: 55%;
     }
@@ -308,22 +313,23 @@
     .services__h2 {
       font-size: 1.6rem  ;
     }
-  
-    .img {
-      max-height: 80%;
-    }
-  
+    
     .parking__h3,
     .junk__h3,
     .graffiti__h3,
     .pressure__h3 {
       font-size: 1.4rem  ;
     }
-  
+    
     .parking__text,
     .junk__text,
     .graffiti__text,
     .pressure__text {
       font-size: 0.9rem;
+    }
+
+    /* Image Visualizer */
+    .img {
+      max-height: 80%;
     }
   }

@@ -70,7 +70,8 @@
     font-size: 1rem  ;
     text-decoration: none;
   }
-  
+
+  /* Form */
   .form__container {
     width: 50rem;
     height: 100%;
@@ -140,6 +141,7 @@
     font-size: 0.9rem;
   }
   
+  /* Errors Text */
   .error {
     height: calc(100vh - var(--header-size) - var(--footer-size));
     width: 100%;
@@ -211,13 +213,13 @@
       font-size: 1.6rem  ;
     }
   
+    /* Form */
     .form__container {
       width: 60%;
     }
   
     .form {
       width: 70%;
-      height: 90%;
     }
   
     .form__submit {
@@ -252,6 +254,7 @@
       font-size: 1.3rem;
     }
   
+    /* Form */
     .form__container {
       height: auto;
       width: 100%;
@@ -306,6 +309,7 @@
       font-size: 0.8rem;
     }
   
+    /* Form */
     .form {
       padding: 0.6rem;
       height: 18.7rem;
@@ -350,6 +354,7 @@
       padding: 0.5rem;
     }
   
+    /* Form */
     .form {
       padding: 0.063rem;
       height: 17.5rem  ;
@@ -406,6 +411,7 @@
       font-size: 0.7rem;
     }
   
+    /* Form */
     .form__container {
       height: auto;
     }

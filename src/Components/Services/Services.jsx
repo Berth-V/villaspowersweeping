@@ -27,7 +27,7 @@ function Services() {
       <div className='services__tittle__container' ref={servicesRef}>
         <motion.h2
           className='services__h2'
-          // Framer Motion Attributes //
+          /* Framer Motion Attributes */
           animate={isInView ? {x: 0} : {x: 1000}}
         >
           <b className='b'>Our</b> services
@@ -43,7 +43,7 @@ function Services() {
             <motion.div
               className='gallery__container'
               key={index}
-              // Framer Motion Attributes //
+              /* Framer Motion Attributes */
               variants={imgsAnimation}
               initial='starts'
               whileInView='ends'

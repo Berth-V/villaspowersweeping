@@ -26,7 +26,7 @@ const Header = () => {
     ends: {
       x: -2050,
       transition: {
-        delay: 2.2,
+        delay: 1,
         duration: 1,
       },
       transitionEnd: {display: 'none'},
@@ -35,19 +35,19 @@ const Header = () => {
   const logoAnimation = {
     ends: {
       rotateY: [0, 360, 0],
-      transition: {duration: 2},
+      transition: {duration: 1},
     },
   };
 
   return (
     <header className='header'>
-      {/* Introducer Rotating Logo  */}
+      {/* Introducer Rotating Logo */}
       <motion.div
         className='reception__animation__container'
-        onAnimationComplete={() => setisLogoAnimationCompleted(true)}
         /* Framer Motion Attributes */
         variants={startAnimation}
         animate='ends'
+        onAnimationComplete={() => setisLogoAnimationCompleted(true)}
       >
         <motion.img
           className='reception__logo'

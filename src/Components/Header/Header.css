@@ -9,7 +9,7 @@
     align-items: center;
     background-color: var(--white-color);
     z-index: 100;
-    border-bottom: inset 0.3rem var(--black-color);
+    border-bottom: solid 0.4rem var(--black-color);
   }
   
   .reception__animation__container {
@@ -143,20 +143,6 @@
   
     .nav__icon {
       font-size: 2.8rem;
-    }
-  
-    .h2 {
-      font-size: 1.9rem;
-      margin: 0;
-    }
-  
-    .home {
-      height: 18.7rem;
-    }
-  
-    .home__text {
-      font-size: 1.1rem;
-      margin: 0;
     }
   }
 

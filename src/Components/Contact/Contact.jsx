@@ -7,41 +7,9 @@ import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
 import useForm from '../../customHooks/useForm';
 
 function Contact() {
-  // Form Variants //
-  const initialData = {
-    name: '',
-    email: '',
-    message: '',
-  };
-  const onValidate = (form) => {
-    const error = [];
-    const regexName = /^[a-zA-ZÀ-ÿ\s]{3,40}$/;
-    const regexEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-    const regexMessage = /^.{1,150}$/;
+  const {form, error, errorMsg, handleChange, handleSubmit} = useForm();
 
-    if (!regexName.test(form.name)) {
-      error[0] = true;
-      error[1] = 'Name must content 3-40 characters';
-      return error;
-    }
-    if (!regexEmail.test(form.email)) {
-      error[0] = true;
-      error[1] = 'Invalid E-mail';
-      return error;
-    }
-    if (!regexMessage.test(form.message)) {
-      error[0] = true;
-      error[1] = 'Message must content 1-150 characters';
-      return error;
-    }
-    error[0] = false;
-    return error;
-  };
-  const {form, error, handleChange, handleSubmit} = useForm(
-    initialData,
-    onValidate
-  );
-  // Framer Motion Variants//
+  // Framer Motion Variants //
   const contactRef = useRef();
   const isInView = useInView(contactRef, {once: true});
   const iconAnimation = {
@@ -113,12 +81,14 @@ function Contact() {
               <span className='icon__span'>E-mail</span>
             </div>
           </div>
-          <div
-            className='form__container'
+          <div className='form__container'>
+            {/* 
+            Form 
             method='POST'
-            action='https://formspree.io/f/meqnlwpj'
-          >
-            <form className='form'>
+            action='https://formspree.io/f/me qnlwpj'
+            */}
+            <form className='form' onSubmit={handleSubmit}>
+              {console.log(error)}
               <input
                 className='form__input'
                 onChange={handleChange}
@@ -153,15 +123,14 @@ function Contact() {
                 value='Submit'
                 onClick={handleSubmit}
               />
-              {/* Errors Text DIV */}
-              {error[0] ? (
-                <div
-                  className='result'
-                  style={error[0] ? {color: '#ff0000'} : {color: '#149600'}}
-                >
-                  {error[1]}
-                </div>
-              ) : null}
+              {/* Errors Text */}
+
+              <div
+                className='result'
+                style={error ? {color: '#149600'} : {color: '#ff0000'}}
+              >
+                {errorMsg}
+              </div>
             </form>
           </div>
         </div>

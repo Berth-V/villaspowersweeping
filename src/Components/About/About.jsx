@@ -20,9 +20,9 @@ function About() {
           <div className='about__description'>
             <img src='img/about1.svg' alt='' className='about__img' />
             <p className='about__text'>
-              Villas&apos;s Power Sweeping is a company created in 2008, with
-              the purpose of providing a better infrastructure to the city of
-              San Diego, keeping the establishments clean, and at the same time
+              Villa&apos;s Power Sweeping is a company created in 2008, with the
+              purpose of providing a better infrastructure to the city of San
+              Diego, keeping the establishments clean, and at the same time
               trying to moderately reduce the environmental damage that could be
               generated as a result of small aggressors such as plastic or
               styrofoam, residues that for the most part remain stagnant in

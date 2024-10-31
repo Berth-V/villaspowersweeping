@@ -19,11 +19,11 @@ function Home() {
   };
 
   return (
-    <div className='home'>
-      <section className='home__section'>
-        <h1 className='h1'>Villa&apos;s Power Sweeping</h1>
+    <section className='home'>
+      <h1 className='h1'>Villa&apos;s Power Sweeping</h1>
+      <div className='home__section1'>
         <motion.h2
-          className='h2'
+          className='home__section1__h2'
           /* Framer Motion Attributes */
           variants={items}
           initial='starts'
@@ -33,7 +33,7 @@ function Home() {
           <b className='b'> time</b>
         </motion.h2>
         <motion.p
-          className='home__text'
+          className='home__section1__text'
           /* Framer Motion Attributes */
           variants={items}
           initial='starts'
@@ -44,8 +44,8 @@ function Home() {
           We know that time is never recovered, invest it in the things that
           matter to you. We take care of the rest
         </motion.p>
-      </section>
-      <section className='home__section2'>
+      </div>
+      <div className='home__section2'>
         <motion.img
           className='home__section2__img'
           src='img/parking.jpg'
@@ -68,8 +68,8 @@ function Home() {
             size, we have tools to deal with any complications that arise
           </p>
         </motion.div>
-      </section>
-      <section className='home__section3' ref={ref}>
+      </div>
+      <div className='home__section3' ref={ref}>
         <motion.div
           className='home__section3__description'
           /* Framer Motion Attributes */
@@ -95,8 +95,8 @@ function Home() {
           /* Framer Motion Attributes */
           animate={isInView ? {x: 0} : {x: -1700}}
         />
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
 export default Home;
