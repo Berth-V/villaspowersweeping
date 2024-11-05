@@ -1,6 +1,5 @@
 # VillasPowerSweeping WebSite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This WebSite promotted services from a company called Villa's Power Sweeping, that provides sweep cleaning services in San Diego county, in California.
 
 ### :globe_with_meridians: Direct WebSite
@@ -26,6 +25,7 @@ Builds the app for production to the `build` folder
 - HTML5
 - CSS5
 - ECS6
+- Vite
 
 ### :wave: Social
 
